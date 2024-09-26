@@ -140,7 +140,7 @@ const Navbar = () => {
               <Link href="/" className={styles.navLink}>Home</Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/about" className={styles.navLink}>About Us</Link>
+              <Link href="/About" className={styles.navLink}>About Us</Link>
             </li>
             <li className={styles.navItem}>
               <Link href="/services" className={styles.navLink}>Services</Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
               <Link href="/success-stories" className={styles.navLink}>Success Stories</Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/contact" className={styles.navLink}>Contact Us</Link>
+              <Link href="/Contact" className={styles.navLink}>Contact Us</Link>
             </li>
           </ul>
           </div>
