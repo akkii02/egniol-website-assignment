@@ -1,0 +1,90 @@
+/* Home.module.css */
+.mainContainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,29,50,1) 35%);
+     
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.heading {
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+}
+
+.videoBox {
+    position: relative;
+    top: -200px;
+}
+
+.cardContainer {
+    display: flex;
+    overflow: hidden; /* Prevent overflow from animations */
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 80px;
+}
+.cardImg{
+width: 250px !important;
+height: 250px !important;
+}
+
+.card {
+    min-width: 200px; /* Set a minimum width */
+    height: 250px;
+    margin-right: 10px; /* Space between cards */
+    animation: scroll 5s linear infinite;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+.secCard{
+width: 100%;
+height: auto;
+display: flex;
+overflow: hidden;
+}
+@media (max-width: 768px) {
+    .card {
+        min-width: 150px; /* Smaller cards for mobile */
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  
+/* Media Queries */
+@media (max-width: 420px) {
+    .box{
+        /* width: 100%; */
+        height: auto;
+    }
+    .mainContainer {
+        height: auto;
+        padding: 30px 0 0 0;
+    }
+    .videoBox {
+        position: relative;
+        top: -70px;
+    }
+    .container {
+        height: auto;
+    }
+    .cardContainer{
+        margin-top: -50px;
+    }
+}
